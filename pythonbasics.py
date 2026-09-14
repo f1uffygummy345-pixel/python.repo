@@ -73,3 +73,22 @@ number2 = int(input("Enter number 2: "))
 
 sum = number1 + number2
 print(f"{number1} + {number2} = {sum}")
+
+#Prompt the user for two numbers and place them in 2 variables
+#print out the values in the variables
+    #Number1: 20
+    #Number2: 40
+#Swap the numbers in the variables so the value in number2 is the value from number one and vice versa
+#print out the variables
+    #Number1: 40
+    #Number2: 20 
+
+number1 = input("Enter number 1: ")
+number2 = input("Enter number 2: ")
+print(f"Number1: {number1}")
+print(f"Number2: {number2}")
+temp = number1
+number1 = number2
+number2 = temp
+print(f"Number1: {number1}")
+print(f"Number2: {number2}")
