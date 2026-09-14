@@ -111,3 +111,17 @@ print(round(total, 2)) #100.12
 print(round(total, 6)) #100.123457
 
 print(f"{total:.2f}") #100.12
+
+price = 200
+print(f"{price:,.2f}") #200.00
+
+#Math functions
+import math
+test_value = 5.24535
+print(math.ceil(test_value)) #rounds up to next whole number
+print(math.floor(test_value)) #round down to whole number
+print(math.pow(2,3)) #exponent
+print(math.sqrt(9)) #square root
+print(max(1,5,22,66,44,12)) #largest number
+print(min(1,5,22,66,44,12)) #smallest number
+print(math.pi)
