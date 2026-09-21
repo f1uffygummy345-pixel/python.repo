@@ -19,7 +19,7 @@ if number2 > highest:
 if number3 > highest:
     number3 = highest 
 
-print("The highest number is {highest}")
+print("The highest number is")
 
 #2. Prompt the user for two numbers and display the highest value.
 #3. Prompt the user for two numbers and display the highest value as well as display if it was the
