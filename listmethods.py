@@ -55,8 +55,15 @@ print(f"Edmonton is in the list {cities.count("Edmonton")} times")
 #empty list
 names = []
 print(names)
-names = input("Enter a name: ")
-names.append(names)
-names = input("Enter a name: ")
-names.append(names)
+name = input("Enter a name: ")
+names.append(name)
+name = input("Enter a name: ")
+names.append(name)
+
 print(names)
+
+#clear the list
+names.clear()
+print(names)
+
+print(cities.index("Edmontons"))
