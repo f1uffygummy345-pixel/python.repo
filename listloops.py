@@ -29,3 +29,16 @@ for index, fruit in enumerate(fruits, start = 1):
 menu = ["Add", "Edit", "Delete", "Exit"]
 for index, menu in enumerate(menu, start = 1):
     print(f"{index}. {menu}")
+    
+names = ["Han Solo", "Luke Skywalker", "Darth Vader", "Princess Leia", "Darth Vader", "Boba Fett"]
+
+bad_names = ("Darth Vader", "Boba Fett")
+
+#show the good names
+for name in names:
+    if name not in bad_names:
+        print(f"{name} is a good name!")
+for name in names:
+    if name in bad_names:
+        continue
+    print(f"{name} is a good name!")
