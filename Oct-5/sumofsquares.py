@@ -21,3 +21,5 @@ else:
 squares = [number ** 2 for number in range(1,my_square + 1)]
 print(squares)
 
+max = int(input("Enter how many numbers"))
+squares = [number for number in range(1,max +1)]
