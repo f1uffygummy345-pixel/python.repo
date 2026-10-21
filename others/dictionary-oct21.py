@@ -69,3 +69,23 @@ for name,grade in sorted(grades.items()):
 #reverse  
 for name,grade in sorted(grades.items(), reverse = True):
     print(f"{name}: {grade}")
+    
+inventory = {"apples":0, "bananas":0, "oranges":0}
+purchases = ["apples", "bananas", "apples", "oranges", "apples"]
+#Loop through the list and add 1 to the inventory counts(currently 0) each time that item is purchased
+inventory = {"apples":3,"bananas":1,"oranges":1}
+
+#print out the inventory and the counts
+
+
+
+
+for item in purchases:
+    inventory[item]+=1
+for item,count in inventory.items():
+    print(f"{item}: {count}")
+    
+
+#for fun
+while(purchases):
+    inventory[purchases]
