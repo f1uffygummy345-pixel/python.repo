@@ -1,6 +1,6 @@
-from .validation import get_valid_quantity
-from .pricing import calculate_total
-from .display import display_welcome,display_recipt
+from validation import get_valid_quantity
+from pricing import calculate_total
+from display import display_welcome,display_recipt
 
 
     
