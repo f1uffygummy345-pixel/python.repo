@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./others/oct.26"
+    ]
+}
