@@ -11,7 +11,7 @@ def main():
     display_welcome()
     item_name = input("Snack name: ")
     quantity = int(input("How many: "))
-    quantity = get_valid_quantity
+    quantity = get_valid_quantity(quantity)
     #total = calculate_total(quantity, UNIT_PRICE) # overriding the default
     #total = calculate_total(quantity) # using the default
     total = calculate_total(quantity = quantity, unit_price = UNIT_PRICE) #using keyword arguments
