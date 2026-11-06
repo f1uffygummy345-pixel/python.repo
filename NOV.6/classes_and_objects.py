@@ -20,6 +20,15 @@ class Car:
     def Accelerate(self, amount):
         self._speed += amount
     
+    def Decelerate(self, amount):
+        self._speed -= amount
+    #override the __str__() to return a useful string when we print an object
+    def __str__(self):
+        return f'This {self.year} {self.make} {self.model} is travelling {self._speed} km/h'  
+    
+    def __repr__(self):
+        return f'Car({self.make},{self.model},{self.year})'
+
 def main():
     #instantiate a new car called car1
     car1 = Car('Ford','F150',2020,0)
@@ -50,6 +59,11 @@ def main():
     print(f'Current speed: {car1._speed}')
 
 
+    #what happens when you print an object?
+    #calls __str__() which converts the object into a string
+    #containing its memory location. Useless
+    print(car1)#__str__
+    print(repr(car1))#__repr__
 if __name__=='__main__':
     main()
 
