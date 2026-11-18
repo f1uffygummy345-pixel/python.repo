@@ -11,7 +11,7 @@ class Animal:
     def __str__(self)->str:
         return (f"Name: {self.name}\n" 
                f"Color: {self.color}\n"
-               f"Number of Legs: {self.num_legs}"
+               f"Number of Legs: {self.num_legs}\n"
         )
     def eat(self)->None:
         print(f"{self.name} starts eating. Yum Yum!")
@@ -35,6 +35,13 @@ class Dog(Animal):
         return_string = super().__str__()
         return_string += f"Breed: {self.breed}\n"
         return return_string
+    #Dog specific method
+    def chase_car(self)->None:
+        print(f"{self.name} chases a car")
+    #override make_a_noise() for Dog
+    def make_a_noise(self)->None:
+        print(f"{self.name} starts barking! Woof! Woof!")
+        
 
 #Testing
 animal1 = Animal("Patrick", "Blue", 2)
@@ -42,4 +49,6 @@ print(animal1)
 animal1.eat()
 animal1.make_a_noise()
 animal1.move()
-dog1 = Dog("Judas", "lime green", 4, "labrador")
+dog1 = Dog("Judas", "lime green", 4, "Golden Retriever")
+dog1.make_a_noise()
+dog1.chase_car()
